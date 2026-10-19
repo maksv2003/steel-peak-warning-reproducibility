@@ -182,25 +182,68 @@ def plot_results(metrics: pd.DataFrame, monthly: pd.DataFrame, output: Path):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    plt.rcParams.update({'font.size': 18, 'axes.spines.top': False, 'axes.spines.right': False, 'figure.dpi': 150})
+    from matplotlib import font_manager
+    import warnings
+
+    # Match the article's 4,866-twip image width so 8 pt remains 8 pt in print.
+    font_path = Path('C:/Windows/Fonts/times.ttf')
+    if font_path.is_file():
+        font_manager.fontManager.addfont(str(font_path))
+    try:
+        resolved_font = font_manager.findfont(
+            font_manager.FontProperties(family='Times New Roman'),
+            fallback_to_default=False,
+        )
+        font_family = font_manager.FontProperties(fname=resolved_font).get_name()
+    except ValueError:
+        font_family = 'DejaVu Serif'
+        warnings.warn(
+            'Times New Roman is unavailable; figures use DejaVu Serif. '
+            'Install Times New Roman to regenerate manuscript-compliant figures.',
+            RuntimeWarning,
+            stacklevel=2,
+        )
+    typography = {
+        'font.family': font_family, 'font.size': 8,
+        'axes.labelsize': 8, 'axes.titlesize': 8,
+        'xtick.labelsize': 8, 'ytick.labelsize': 8,
+        'legend.fontsize': 8, 'legend.title_fontsize': 8,
+        'figure.titlesize': 8, 'figure.labelsize': 8,
+        'axes.spines.top': False, 'axes.spines.right': False,
+        'axes.linewidth': .6, 'axes.labelpad': 3, 'axes.axisbelow': True,
+        'xtick.major.width': .6, 'ytick.major.width': .6,
+        'xtick.major.pad': 2, 'ytick.major.pad': 2,
+        'figure.dpi': 480, 'savefig.dpi': 480,
+    }
+    paper_width = 4866 / 1440
     styles = {'Persistence': ('#777777', 's'), 'Logistic': ('#0072B2', '^'), 'CB classifier': ('#D55E00', 'o'), 'CB regressor': ('#009E73', 'D')}
-    for protocol in ('legacy', 'origin_safe'):
-        fig, ax = plt.subplots(figsize=(8.2, 6), constrained_layout=True)
-        for method, (color, marker) in styles.items():
-            subset = metrics[(metrics.protocol == protocol) & (metrics.horizon_hours == 1) & (metrics.method == method)].sort_values('budget')
-            ax.plot(subset.false_per_day, subset.recall * 100, label=method, color=color, marker=marker, lw=2)
-        ax.axvline(.5, color='#444444', linestyle=':', label='Primary calibration allowance')
-        ax.set(xlabel='False warnings per calendar day', ylabel='Peak-record recall (%)', ylim=(0, None))
-        ax.grid(axis='y', alpha=.25); ax.legend(fontsize=13)
-        fig.savefig(output / f'operating_points_{protocol}.png'); plt.close(fig)
-        subset = monthly[(monthly.protocol == protocol) & (monthly.method == 'CB classifier') & (monthly.horizon_hours == 1) & (monthly.budget == .5)]
-        fig, ax = plt.subplots(figsize=(9.5, 6), constrained_layout=True)
-        bars = ax.bar(['Sep', 'Oct', 'Nov', 'Dec'], subset.false_per_day, color='#0072B2')
-        ax.bar_label(bars, fmt='%.3f', padding=-28, color='white')
-        ax.axhline(.5, color='#444444', linestyle='--', label='Primary calibration allowance')
-        ax.set(xlabel='Test month in 2018', ylabel='False warnings per calendar day', ylim=(0, max(1.15, subset.false_per_day.max() * 1.2)))
-        ax.grid(axis='y', alpha=.25); ax.legend()
-        fig.savefig(output / f'monthly_false_warnings_{protocol}.png'); plt.close(fig)
+    with plt.rc_context(typography):
+        for protocol in ('legacy', 'origin_safe'):
+            fig, ax = plt.subplots(figsize=(paper_width, 2.5), constrained_layout=True)
+            for method, (color, marker) in styles.items():
+                subset = metrics[(metrics.protocol == protocol) & (metrics.horizon_hours == 1) & (metrics.method == method)].sort_values('budget')
+                ax.plot(subset.false_per_day, subset.recall * 100, label=method,
+                        color=color, marker=marker, markersize=3.2, linewidth=.9)
+            ax.axvline(.5, color='#444444', linestyle=':', linewidth=.8,
+                       label='Calibration allowance')
+            ax.set(xlabel='False warnings per calendar day', ylabel='Peak-record recall (%)', ylim=(0, None))
+            ax.grid(axis='y', alpha=.25, linewidth=.5)
+            ax.legend(loc='upper left', fontsize=8, borderpad=.3,
+                      labelspacing=.25, handlelength=1.5, framealpha=.95)
+            fig.savefig(output / f'operating_points_{protocol}.png')
+            plt.close(fig)
+
+            subset = monthly[(monthly.protocol == protocol) & (monthly.method == 'CB classifier') & (monthly.horizon_hours == 1) & (monthly.budget == .5)].sort_values('month')
+            fig, ax = plt.subplots(figsize=(paper_width, 2.15), constrained_layout=True)
+            bars = ax.bar(['Sep', 'Oct', 'Nov', 'Dec'], subset.false_per_day, color='#0072B2')
+            ax.bar_label(bars, fmt='%.3f', padding=-10, color='white', fontsize=8)
+            ax.axhline(.5, color='#444444', linestyle='--', linewidth=.8,
+                       label='Calibration allowance')
+            ax.set(xlabel='Test month in 2018', ylabel='False warnings per calendar day', ylim=(0, max(1.15, subset.false_per_day.max() * 1.2)))
+            ax.grid(axis='y', alpha=.25, linewidth=.5)
+            ax.legend(loc='upper left', fontsize=8, borderpad=.3, handlelength=1.5)
+            fig.savefig(output / f'monthly_false_warnings_{protocol}.png')
+            plt.close(fig)
 
 
 def run(data_path: Path, output: Path, horizons=(4, 8, 16), n_boot=2000):

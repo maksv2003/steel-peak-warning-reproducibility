@@ -26,6 +26,8 @@ The script evaluates all six methods at one-, two- and four-hour leads in both p
 
 Direct package versions are pinned. The actual scientific-package versions and operating system for the supplied run are recorded in [results/environment.json](results/environment.json). This is not a complete lockfile of transitive dependencies.
 
+The publication PNG figures use **Times New Roman at 8 pt**, at a final width of 3.3791667 inches and 480 dpi. Install an appropriately licensed copy of Times New Roman for identical figure typography. If it is unavailable, the plotter emits a warning and uses DejaVu Serif; that fallback preserves the plotted data but does not meet the manuscript's font specification. The supplied publication figures were generated with Times New Roman. The figure-formatting revision does not change the numerical result files. The notebook also contains separate, larger exploratory plots.
+
 ## What is evaluated
 
 The target is one future 15-minute consumption record, at row offsets 4, 8 or 16. A peak exceeds the training-period 90th percentile, **85.82 kWh**. It is a statistical label, not a plant's contractual or equipment limit.
