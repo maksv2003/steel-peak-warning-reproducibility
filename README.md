@@ -91,12 +91,3 @@ The supplied run still illustrates the operational tradeoff: the regressor detec
 | [results/manuscript_comparison.csv](results/manuscript_comparison.csv), [results/audit_summary.json](results/audit_summary.json) | Detailed numerical comparisons and audit coverage/status summary |
 | `results/*.png` | Operating-point and monthly false-warning figures |
 
-## Attribution
-
-[CITATION.cff](CITATION.cff) credits the repository maintainer **maksv2003** for this software reconstruction. It does not assign authorship of the underlying study or third-party sources. Cite the original research and dataset separately as appropriate; see [SOURCES.md](SOURCES.md).
-
-The redistributed dataset is covered by its original **CC BY 4.0** license. No software license is declared in this repository at this stage; the dataset license does not license the code or third-party papers.
-
-## Кратко по-русски
-
-Это новая реализация метода по тексту статьи, а не найденный оригинальный архив авторов. Базовые модели и логистическая регрессия совпали с Table I после округления; **результаты CatBoost не совпали** и сохранены без подгонки. Режим `legacy` повторяет описанное разбиение, `origin_safe` устраняет проблему доступности модели и порога на границах периодов. Исходные даты с 365 нарушениями возрастания сохранены; вычисления идут по порядку строк. Основная команда: `python reproduce.py`.
