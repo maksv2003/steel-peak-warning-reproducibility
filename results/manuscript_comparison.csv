@@ -1,0 +1,186 @@
+protocol,comparison_role,location,method,horizon_hours,budget,month,segment,contrast,metric,interval_metric,unit,reported,reported_decimals,recomputed,delta,matches_reported_rounding,status,source_file
+legacy,direct_manuscript_comparison,Table I,Persistence,1,0.5,,,,recall,,percent,12.6,1,12.62848751835536,0.028487518355360564,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Persistence,1,0.5,,,,recall,,percent,12.6,1,12.62848751835536,0.028487518355360564,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Persistence,1,0.5,,,,precision,,percent,43.9,1,43.87755102040816,-0.022448979591835894,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Persistence,1,0.5,,,,precision,,percent,43.9,1,43.87755102040816,-0.022448979591835894,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Persistence,1,0.5,,,,false_per_day,,false/calendar_day,0.902,3,0.9016393442622952,-0.00036065573770482917,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Persistence,1,0.5,,,,false_per_day,,false/calendar_day,0.902,3,0.9016393442622952,-0.00036065573770482917,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Persistence,1,0.5,,,,average_precision,,score,0.33,3,0.3298390096738314,-0.00016099032616861964,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Persistence,1,0.5,,,,average_precision,,score,0.33,3,0.3298391909385922,-0.00016080906140780726,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Previous day,1,0.5,,,,recall,,percent,4.3,1,4.25844346549192,-0.0415565345080795,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Previous day,1,0.5,,,,recall,,percent,4.3,1,4.25844346549192,-0.0415565345080795,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Previous day,1,0.5,,,,precision,,percent,16.4,1,16.38418079096045,-0.01581920903954881,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Previous day,1,0.5,,,,precision,,percent,16.4,1,16.38418079096045,-0.01581920903954881,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Previous day,1,0.5,,,,false_per_day,,false/calendar_day,1.213,3,1.213114754098361,0.00011475409836081418,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Previous day,1,0.5,,,,false_per_day,,false/calendar_day,1.213,3,1.213114754098361,0.00011475409836081418,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Previous day,1,0.5,,,,average_precision,,score,0.142,3,0.1416177169538472,-0.0003822830461527871,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Previous day,1,0.5,,,,average_precision,,score,0.142,3,0.1416183903104187,-0.00038160968958128594,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Previous week,1,0.5,,,,recall,,percent,5.1,1,5.139500734214391,0.03950073421439093,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Previous week,1,0.5,,,,recall,,percent,5.1,1,5.139500734214391,0.03950073421439093,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Previous week,1,0.5,,,,precision,,percent,20.3,1,20.34883720930232,0.04883720930232016,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Previous week,1,0.5,,,,precision,,percent,20.3,1,20.34883720930232,0.04883720930232016,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Previous week,1,0.5,,,,false_per_day,,false/calendar_day,1.123,3,1.1229508196721312,-4.91803278688252e-05,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Previous week,1,0.5,,,,false_per_day,,false/calendar_day,1.123,3,1.1229508196721312,-4.91803278688252e-05,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Previous week,1,0.5,,,,average_precision,,score,0.171,3,0.1707195256210452,-0.00028047437895481475,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Previous week,1,0.5,,,,average_precision,,score,0.171,3,0.1707196814216525,-0.0002803185783475104,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Logistic,1,0.5,,,,recall,,percent,14.5,1,14.537444933920701,0.03744493392070147,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Logistic,1,0.5,,,,recall,,percent,14.5,1,14.537444933920701,0.03744493392070147,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Logistic,1,0.5,,,,precision,,percent,60.4,1,60.36585365853659,-0.034146341463412,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Logistic,1,0.5,,,,precision,,percent,60.4,1,60.36585365853659,-0.034146341463412,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Logistic,1,0.5,,,,false_per_day,,false/calendar_day,0.533,3,0.5327868852459017,-0.00021311475409835356,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Logistic,1,0.5,,,,false_per_day,,false/calendar_day,0.533,3,0.5327868852459017,-0.00021311475409835356,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,Logistic,1,0.5,,,,average_precision,,score,0.405,3,0.4049737819896045,-2.621801039554006e-05,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table I,Logistic,1,0.5,,,,average_precision,,score,0.405,3,0.4049737819896045,-2.621801039554006e-05,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table I,CB classifier,1,0.5,,,,recall,,percent,10.6,1,12.92217327459618,2.32217327459618,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table I,CB classifier,1,0.5,,,,recall,,percent,10.6,1,12.92217327459618,2.32217327459618,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table I,CB classifier,1,0.5,,,,precision,,percent,48.3,1,52.69461077844312,4.394610778443123,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table I,CB classifier,1,0.5,,,,precision,,percent,48.3,1,52.69461077844312,4.394610778443123,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table I,CB classifier,1,0.5,,,,false_per_day,,false/calendar_day,0.631,3,0.6475409836065574,0.016540983606557425,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table I,CB classifier,1,0.5,,,,false_per_day,,false/calendar_day,0.631,3,0.6475409836065574,0.016540983606557425,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table I,CB classifier,1,0.5,,,,average_precision,,score,0.426,3,0.4384989556344019,0.012498955634401898,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table I,CB classifier,1,0.5,,,,average_precision,,score,0.426,3,0.4384989556344019,0.012498955634401898,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table I,CB regressor,1,0.5,,,,recall,,percent,16.9,1,19.53010279001468,2.630102790014682,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table I,CB regressor,1,0.5,,,,recall,,percent,16.9,1,19.53010279001468,2.630102790014682,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table I,CB regressor,1,0.5,,,,precision,,percent,56.4,1,54.958677685950406,-1.441322314049593,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table I,CB regressor,1,0.5,,,,precision,,percent,56.4,1,54.958677685950406,-1.441322314049593,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table I,CB regressor,1,0.5,,,,false_per_day,,false/calendar_day,0.73,3,0.8934426229508197,0.16344262295081968,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table I,CB regressor,1,0.5,,,,false_per_day,,false/calendar_day,0.73,3,0.8934426229508197,0.16344262295081968,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table I,CB regressor,1,0.5,,,,average_precision,,score,0.437,3,0.4402814668643228,0.0032814668643227907,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table I,CB regressor,1,0.5,,,,average_precision,,score,0.437,3,0.4402814668643228,0.0032814668643227907,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: detected peaks,Persistence,1,0.5,,,,tp,,count,86.0,0,86.0,0.0,True,match,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: detected peaks,Persistence,1,0.5,,,,tp,,count,86.0,0,86.0,0.0,True,match,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: false warnings,Persistence,1,0.5,,,,fp,,count,110.0,0,110.0,0.0,True,match,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: false warnings,Persistence,1,0.5,,,,fp,,count,110.0,0,110.0,0.0,True,match,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: detected onsets,Persistence,1,0.5,,,,onsets_detected,,count,15.0,0,15.0,0.0,True,match,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: detected onsets,Persistence,1,0.5,,,,onsets_detected,,count,15.0,0,15.0,0.0,True,match,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: detected peaks,Logistic,1,0.5,,,,tp,,count,99.0,0,99.0,0.0,True,match,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: detected peaks,Logistic,1,0.5,,,,tp,,count,99.0,0,99.0,0.0,True,match,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: false warnings,Logistic,1,0.5,,,,fp,,count,65.0,0,65.0,0.0,True,match,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: false warnings,Logistic,1,0.5,,,,fp,,count,65.0,0,65.0,0.0,True,match,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: detected onsets,Logistic,1,0.5,,,,onsets_detected,,count,18.0,0,18.0,0.0,True,match,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: detected onsets,Logistic,1,0.5,,,,onsets_detected,,count,18.0,0,18.0,0.0,True,match,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: detected peaks,CB classifier,1,0.5,,,,tp,,count,72.0,0,88.0,16.0,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: detected peaks,CB classifier,1,0.5,,,,tp,,count,72.0,0,88.0,16.0,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: false warnings,CB classifier,1,0.5,,,,fp,,count,77.0,0,79.0,2.0,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: false warnings,CB classifier,1,0.5,,,,fp,,count,77.0,0,79.0,2.0,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: detected onsets,CB classifier,1,0.5,,,,onsets_detected,,count,14.0,0,18.0,4.0,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: detected onsets,CB classifier,1,0.5,,,,onsets_detected,,count,14.0,0,18.0,4.0,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: detected peaks,CB regressor,1,0.5,,,,tp,,count,115.0,0,133.0,18.0,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: detected peaks,CB regressor,1,0.5,,,,tp,,count,115.0,0,133.0,18.0,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: false warnings,CB regressor,1,0.5,,,,fp,,count,89.0,0,109.0,20.0,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: false warnings,CB regressor,1,0.5,,,,fp,,count,89.0,0,109.0,20.0,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: detected onsets,CB regressor,1,0.5,,,,onsets_detected,,count,22.0,0,27.0,5.0,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: detected onsets,CB regressor,1,0.5,,,,onsets_detected,,count,22.0,0,27.0,5.0,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,1,0.25,,,,recall,,percent,5.3,1,3.81791483113069,-1.4820851688693097,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,1,0.25,,,,recall,,percent,5.3,1,3.81791483113069,-1.4820851688693097,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,1,0.25,,,,false_per_day,,false/calendar_day,0.295,3,0.1147540983606557,-0.18024590163934429,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,1,0.25,,,,false_per_day,,false/calendar_day,0.295,3,0.1147540983606557,-0.18024590163934429,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,1,0.5,,,,recall,,percent,10.6,1,12.92217327459618,2.32217327459618,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,1,0.5,,,,recall,,percent,10.6,1,12.92217327459618,2.32217327459618,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,1,0.5,,,,false_per_day,,false/calendar_day,0.631,3,0.6475409836065574,0.016540983606557425,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,1,0.5,,,,false_per_day,,false/calendar_day,0.631,3,0.6475409836065574,0.016540983606557425,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,1,1.0,,,,recall,,percent,20.4,1,20.558002936857562,0.15800293685756372,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,1,1.0,,,,recall,,percent,20.4,1,20.558002936857562,0.15800293685756372,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,1,1.0,,,,false_per_day,,false/calendar_day,1.148,3,1.0819672131147542,-0.06603278688524572,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,1,1.0,,,,false_per_day,,false/calendar_day,1.148,3,1.0819672131147542,-0.06603278688524572,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,2,0.25,,,,recall,,percent,0.7,1,0.73421439060205,0.034214390602050004,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,2,0.25,,,,recall,,percent,0.7,1,0.73421439060205,0.034214390602050004,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,2,0.25,,,,false_per_day,,false/calendar_day,0.705,3,0.5737704918032787,-0.1312295081967213,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,2,0.25,,,,false_per_day,,false/calendar_day,0.705,3,0.5737704918032787,-0.1312295081967213,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,2,0.5,,,,recall,,percent,1.9,1,3.23054331864904,1.33054331864904,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,2,0.5,,,,recall,,percent,1.9,1,3.23054331864904,1.33054331864904,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,2,0.5,,,,false_per_day,,false/calendar_day,1.393,3,1.4836065573770492,0.09060655737704915,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,2,0.5,,,,false_per_day,,false/calendar_day,1.393,3,1.4836065573770492,0.09060655737704915,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,2,1.0,,,,recall,,percent,6.6,1,7.488986784140959,0.8889867841409593,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,2,1.0,,,,recall,,percent,6.6,1,7.488986784140959,0.8889867841409593,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,2,1.0,,,,false_per_day,,false/calendar_day,2.115,3,2.0,-0.11500000000000021,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,2,1.0,,,,false_per_day,,false/calendar_day,2.115,3,2.0,-0.11500000000000021,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,4,0.25,,,,recall,,percent,0.4,1,0.44052863436122996,0.04052863436122994,True,match,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,4,0.25,,,,recall,,percent,0.4,1,0.44052863436122996,0.04052863436122994,True,match,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,4,0.25,,,,false_per_day,,false/calendar_day,0.393,3,0.4180327868852459,0.025032786885245906,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,4,0.25,,,,false_per_day,,false/calendar_day,0.393,3,0.4180327868852459,0.025032786885245906,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,4,0.5,,,,recall,,percent,0.6,1,0.73421439060205,0.13421439060204998,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,4,0.5,,,,recall,,percent,0.6,1,0.73421439060205,0.13421439060204998,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,4,0.5,,,,false_per_day,,false/calendar_day,0.762,3,0.8278688524590164,0.06586885245901641,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,4,0.5,,,,false_per_day,,false/calendar_day,0.762,3,0.8278688524590164,0.06586885245901641,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,4,1.0,,,,recall,,percent,1.3,1,1.17474302496328,-0.12525697503672006,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,4,1.0,,,,recall,,percent,1.3,1,1.17474302496328,-0.12525697503672006,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Table II,CB classifier,4,1.0,,,,false_per_day,,false/calendar_day,1.328,3,1.4344262295081966,0.10642622950819658,False,mismatch,metrics.csv
+origin_safe,modified_protocol_reference,Table II,CB classifier,4,1.0,,,,false_per_day,,false/calendar_day,1.328,3,1.4344262295081966,0.10642622950819658,False,mismatch,metrics.csv
+legacy,direct_manuscript_comparison,Monthly Test Results / Figure 2,CB classifier,1,0.5,9,,,false_per_day,,false/calendar_day,0.233,3,0.2666666666666666,0.033666666666666595,False,mismatch,monthly_metrics.csv
+origin_safe,modified_protocol_reference,Monthly Test Results / Figure 2,CB classifier,1,0.5,9,,,false_per_day,,false/calendar_day,0.233,3,0.2666666666666666,0.033666666666666595,False,mismatch,monthly_metrics.csv
+legacy,direct_manuscript_comparison,Monthly Test Results / Figure 2,CB classifier,1,0.5,10,,,false_per_day,,false/calendar_day,0.452,3,0.4516129032258064,-0.0003870967741936293,True,match,monthly_metrics.csv
+origin_safe,modified_protocol_reference,Monthly Test Results / Figure 2,CB classifier,1,0.5,10,,,false_per_day,,false/calendar_day,0.452,3,0.4516129032258064,-0.0003870967741936293,True,match,monthly_metrics.csv
+legacy,direct_manuscript_comparison,Monthly Test Results / Figure 2,CB classifier,1,0.5,11,,,false_per_day,,false/calendar_day,0.833,3,0.9,0.06700000000000006,False,mismatch,monthly_metrics.csv
+origin_safe,modified_protocol_reference,Monthly Test Results / Figure 2,CB classifier,1,0.5,11,,,false_per_day,,false/calendar_day,0.833,3,0.9,0.06700000000000006,False,mismatch,monthly_metrics.csv
+legacy,direct_manuscript_comparison,Monthly Test Results / Figure 2,CB classifier,1,0.5,12,,,false_per_day,,false/calendar_day,1.0,3,0.967741935483871,-0.032258064516129004,False,mismatch,monthly_metrics.csv
+origin_safe,modified_protocol_reference,Monthly Test Results / Figure 2,CB classifier,1,0.5,12,,,false_per_day,,false/calendar_day,1.0,3,0.967741935483871,-0.032258064516129004,False,mismatch,monthly_metrics.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% recall CI,Logistic,,,,,,lower,recall,percent,8.5,1,8.5460495573759,0.04604955737590011,True,match,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% recall CI,Logistic,,,,,,lower,recall,percent,8.5,1,8.5460495573759,0.04604955737590011,True,match,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% recall CI,Logistic,,,,,,upper,recall,percent,22.1,1,22.147873437444428,0.047873437444426514,True,match,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% recall CI,Logistic,,,,,,upper,recall,percent,22.1,1,22.147873437444428,0.047873437444426514,True,match,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% false_per_day CI,Logistic,,,,,,lower,false_per_day,false/calendar_day,0.344,3,0.3442622950819672,0.0002622950819672343,True,match,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% false_per_day CI,Logistic,,,,,,lower,false_per_day,false/calendar_day,0.344,3,0.3442622950819672,0.0002622950819672343,True,match,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% false_per_day CI,Logistic,,,,,,upper,false_per_day,false/calendar_day,0.713,3,0.7131147540983607,0.00011475409836070316,True,match,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% false_per_day CI,Logistic,,,,,,upper,false_per_day,false/calendar_day,0.713,3,0.7131147540983607,0.00011475409836070316,True,match,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% recall CI,CB classifier,,,,,,lower,recall,percent,5.4,1,7.1997829036635,1.7997829036635,False,mismatch,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% recall CI,CB classifier,,,,,,lower,recall,percent,5.4,1,7.1997829036635,1.7997829036635,False,mismatch,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% recall CI,CB classifier,,,,,,upper,recall,percent,17.2,1,20.4611061848814,3.2611061848814025,False,mismatch,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% recall CI,CB classifier,,,,,,upper,recall,percent,17.2,1,20.4611061848814,3.2611061848814025,False,mismatch,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% false_per_day CI,CB classifier,,,,,,lower,false_per_day,false/calendar_day,0.344,3,0.3770491803278688,0.033049180327868855,False,mismatch,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% false_per_day CI,CB classifier,,,,,,lower,false_per_day,false/calendar_day,0.344,3,0.3770491803278688,0.033049180327868855,False,mismatch,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% false_per_day CI,CB classifier,,,,,,upper,false_per_day,false/calendar_day,1.0,3,0.9918032786885246,-0.008196721311475419,False,mismatch,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% false_per_day CI,CB classifier,,,,,,upper,false_per_day,false/calendar_day,1.0,3,0.9918032786885246,-0.008196721311475419,False,mismatch,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% recall CI,CB regressor,,,,,,lower,recall,percent,9.5,1,11.029270729270719,1.5292707292707188,False,mismatch,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% recall CI,CB regressor,,,,,,lower,recall,percent,9.5,1,11.029270729270719,1.5292707292707188,False,mismatch,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% recall CI,CB regressor,,,,,,upper,recall,percent,26.8,1,29.14304212250936,2.3430421225093596,False,mismatch,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% recall CI,CB regressor,,,,,,upper,recall,percent,26.8,1,29.14304212250936,2.3430421225093596,False,mismatch,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% false_per_day CI,CB regressor,,,,,,lower,false_per_day,false/calendar_day,0.385,3,0.5409836065573771,0.15598360655737709,False,mismatch,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% false_per_day CI,CB regressor,,,,,,lower,false_per_day,false/calendar_day,0.385,3,0.5409836065573771,0.15598360655737709,False,mismatch,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: 95% false_per_day CI,CB regressor,,,,,,upper,false_per_day,false/calendar_day,1.107,3,1.278688524590164,0.17168852459016404,False,mismatch,bootstrap_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: 95% false_per_day CI,CB regressor,,,,,,upper,false_per_day,false/calendar_day,1.107,3,1.278688524590164,0.17168852459016404,False,mismatch,bootstrap_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: paired 95% recall-difference CI,,,,,,CB classifier minus Logistic,lower,,percentage_points,-9.4,1,-7.59799488692767,1.8020051130723305,False,mismatch,paired_recall_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: paired 95% recall-difference CI,,,,,,CB classifier minus Logistic,lower,,percentage_points,-9.4,1,-7.59799488692767,1.8020051130723305,False,mismatch,paired_recall_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: paired 95% recall-difference CI,,,,,,CB classifier minus Logistic,upper,,percentage_points,1.5,1,4.33545004128819,2.8354500412881896,False,mismatch,paired_recall_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: paired 95% recall-difference CI,,,,,,CB classifier minus Logistic,upper,,percentage_points,1.5,1,4.33545004128819,2.8354500412881896,False,mismatch,paired_recall_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: paired 95% recall-difference CI,,,,,,CB classifier minus CB regressor,lower,,percentage_points,-10.7,1,-10.93065448096341,-0.2306544809634108,False,mismatch,paired_recall_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: paired 95% recall-difference CI,,,,,,CB classifier minus CB regressor,lower,,percentage_points,-10.7,1,-10.93065448096341,-0.2306544809634108,False,mismatch,paired_recall_intervals.csv
+legacy,direct_manuscript_comparison,One Hour Warning Results: paired 95% recall-difference CI,,,,,,CB classifier minus CB regressor,upper,,percentage_points,-2.6,1,-2.05727346843699,0.5427265315630101,False,mismatch,paired_recall_intervals.csv
+origin_safe,modified_protocol_reference,One Hour Warning Results: paired 95% recall-difference CI,,,,,,CB classifier minus CB regressor,upper,,percentage_points,-2.6,1,-2.05727346843699,0.5427265315630101,False,mismatch,paired_recall_intervals.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: sample size,,1,,,train,,records,,count,16701.0,0,16701.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: sample size,,1,,,train,,records,,count,16701.0,0,16701.0,0.0,True,match,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: sample size,,1,,,calibration,,records,,count,5952.0,0,5952.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: sample size,,1,,,calibration,,records,,count,5952.0,0,5948.0,-4.0,False,mismatch,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: sample size,,1,,,test,,records,,count,11712.0,0,11712.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: sample size,,1,,,test,,records,,count,11712.0,0,11708.0,-4.0,False,mismatch,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: peak count,,1,,,calibration,,peaks,,count,405.0,0,405.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: peak count,,1,,,calibration,,peaks,,count,405.0,0,405.0,0.0,True,match,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: peak count,,1,,,test,,peaks,,count,681.0,0,681.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: peak count,,1,,,test,,peaks,,count,681.0,0,681.0,0.0,True,match,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: sample size,,2,,,train,,records,,count,16697.0,0,16697.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: sample size,,2,,,train,,records,,count,16697.0,0,16697.0,0.0,True,match,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: sample size,,2,,,calibration,,records,,count,5952.0,0,5952.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: sample size,,2,,,calibration,,records,,count,5952.0,0,5944.0,-8.0,False,mismatch,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: sample size,,2,,,test,,records,,count,11712.0,0,11712.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: sample size,,2,,,test,,records,,count,11712.0,0,11704.0,-8.0,False,mismatch,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: peak count,,2,,,calibration,,peaks,,count,405.0,0,405.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: peak count,,2,,,calibration,,peaks,,count,405.0,0,405.0,0.0,True,match,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: peak count,,2,,,test,,peaks,,count,681.0,0,681.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: peak count,,2,,,test,,peaks,,count,681.0,0,681.0,0.0,True,match,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: sample size,,4,,,train,,records,,count,16689.0,0,16689.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: sample size,,4,,,train,,records,,count,16689.0,0,16689.0,0.0,True,match,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: sample size,,4,,,calibration,,records,,count,5952.0,0,5952.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: sample size,,4,,,calibration,,records,,count,5952.0,0,5936.0,-16.0,False,mismatch,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: sample size,,4,,,test,,records,,count,11712.0,0,11712.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: sample size,,4,,,test,,records,,count,11712.0,0,11696.0,-16.0,False,mismatch,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: peak count,,4,,,calibration,,peaks,,count,405.0,0,405.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: peak count,,4,,,calibration,,peaks,,count,405.0,0,405.0,0.0,True,match,split_audit.csv
+legacy,direct_manuscript_comparison,Chronological Protocol: peak count,,4,,,test,,peaks,,count,681.0,0,681.0,0.0,True,match,split_audit.csv
+origin_safe,modified_protocol_reference,Chronological Protocol: peak count,,4,,,test,,peaks,,count,681.0,0,681.0,0.0,True,match,split_audit.csv
+source,direct_manuscript_comparison,Data and Observation Sequence / test event counts,,,,,,,rows,,count,35040.0,0,35040.0,0.0,True,match,data_audit.json
+source,direct_manuscript_comparison,Data and Observation Sequence / test event counts,,,,,,,missing_cells,,count,0.0,0,0.0,0.0,True,match,data_audit.json
+source,direct_manuscript_comparison,Data and Observation Sequence / test event counts,,,,,,,peak_cutoff,,kWh,85.82,2,85.82,0.0,True,match,data_audit.json
+source,direct_manuscript_comparison,Data and Observation Sequence / test event counts,,,,,,,calibration_peaks,,count,405.0,0,405.0,0.0,True,match,data_audit.json
+source,direct_manuscript_comparison,Data and Observation Sequence / test event counts,,,,,,,test_peaks,,count,681.0,0,681.0,0.0,True,match,data_audit.json
+source,direct_manuscript_comparison,Data and Observation Sequence / test event counts,,,,,,,test_onsets,,count,228.0,0,228.0,0.0,True,match,data_audit.json
+source,direct_manuscript_comparison,Data and Observation Sequence: number of columns,,,,,,,columns,,count,11.0,0,11.0,0.0,True,match,data_audit.json

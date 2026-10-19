@@ -1,0 +1,9 @@
+protocol,contrast,lower,upper
+legacy,CB classifier minus Logistic,-0.07597994886927671,0.04335450041288191
+legacy,CB classifier minus CB regressor,-0.10930654480963414,-0.02057273468436994
+legacy,CB regressor minus Logistic,-0.022853941518776878,0.12135382242784751
+legacy,CB regressor minus Persistence,0.006389536340602912,0.14247705894381674
+origin_safe,CB classifier minus Logistic,-0.07597994886927671,0.04335450041288191
+origin_safe,CB classifier minus CB regressor,-0.10930654480963414,-0.02057273468436994
+origin_safe,CB regressor minus Logistic,-0.022853941518776878,0.12135382242784751
+origin_safe,CB regressor minus Persistence,0.006389536340602912,0.14247705894381674

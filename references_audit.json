@@ -1,0 +1,274 @@
+{
+  "checked_on": "2026-10-20",
+  "timezone": "Europe/Moscow",
+  "scope": "All 10 references in work/article.txt; revised DOCX not edited. Parent reports e70100 already added to revised [4].",
+  "method": "DOI open attempts plus publisher/repository/author pages. Where direct fetch was denied, indexed text from the primary domain was checked. This establishes source identity and metadata, not universal browser availability or full-text access.",
+  "summary": {
+    "nonexistent_sources_found": 0,
+    "proven_invalid_dois_found": 0,
+    "directly_readable_primary_pages": [
+      1,
+      4,
+      5,
+      8,
+      9
+    ],
+    "primary_domain_indexed_evidence_with_direct_access_limit": [
+      2,
+      3,
+      6,
+      7
+    ],
+    "doi_redirect_confirmed_but_primary_page_unreadable": [
+      10
+    ],
+    "caveat": "Most doi.org calls returned tool-specific not-accessible errors. Do not label these DOIs broken. [9] explicitly redirected to PLOS; [10] explicitly redirected to the correct Project Euclid article. Publisher DOI declarations verify the remaining identifiers.",
+    "suggested_bibliography_edits": [
+      "[4] Add Art. no. e70100 if absent; already reported fixed in revised DOCX.",
+      "[8] Add pp. 6638–6648 and the official NeurIPS URL; pages are in the official NeurIPS Metadata.json.",
+      "[10] Prefer H. R. Künsch (author's own spelling) over ASCII Kunsch. This is a typographic improvement, not a different author."
+    ]
+  },
+  "references": [
+    {
+      "n": 1,
+      "authors": [
+        "Sathishkumar V E",
+        "Changsun Shin",
+        "Yongyun Cho"
+      ],
+      "title": "Steel Industry Energy Consumption",
+      "venue": "UCI Machine Learning Repository",
+      "year": 2021,
+      "doi": "10.24432/C52G8C",
+      "doi_url": "https://doi.org/10.24432/C52G8C",
+      "canonical_url": "https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption",
+      "access": "Official dataset page readable; DOI fetch itself unavailable in browsing tool. Download link present.",
+      "metadata_verdict": "Matches official recommended citation, including 2021. Page separately says donated 2023-08-13; that is not a reason to replace the citation year.",
+      "content_support": "Supports origin DAEWOO Steel Co. Ltd., Gwangyang, South Korea; 35040 records; kWh measurement; no missing values; field descriptions. Does not by itself verify author's preprocessing, counts by split, or numerical model results.",
+      "corrections": []
+    },
+    {
+      "n": 2,
+      "authors": [
+        "Sathishkumar V E",
+        "Changsun Shin",
+        "Yongyun Cho"
+      ],
+      "title": "Efficient energy consumption prediction model for a data analytic-enabled industry building in a smart city",
+      "venue": "Building Research & Information",
+      "year": 2021,
+      "volume": "49",
+      "issue": "1",
+      "pages": "127–143",
+      "doi": "10.1080/09613218.2020.1809983",
+      "doi_url": "https://doi.org/10.1080/09613218.2020.1809983",
+      "canonical_url": "https://www.tandfonline.com/doi/abs/10.1080/09613218.2020.1809983",
+      "access": "Direct publisher fetch returned HTTP 403. Publisher-domain indexed page exposes complete citation and abstract. Full-text access not established; do not describe 403 as invalid DOI or confirmed paywall.",
+      "metadata_verdict": "Matches. Published online 2020-09-17, assigned to 49(1), 2021; use issue year 2021.",
+      "content_support": "Abstract compares five data-mining models using a South Korean steel facility. UCI lists it as introductory paper, supporting the dataset connection claimed in the manuscript.",
+      "supporting_primary_urls": [
+        "https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption",
+        "https://scholarprofiles.sunwayuniversity.edu.my/en/publications/efficient-energy-consumption-prediction-model-for-a-data-analytic/"
+      ],
+      "corrections": []
+    },
+    {
+      "n": 3,
+      "authors": [
+        "K. Karthick",
+        "R. Dharmaprakash",
+        "S. Sathya"
+      ],
+      "title": "Predictive Modeling of Energy Consumption in the Steel Industry Using CatBoost Regression: A Data-Driven Approach for Sustainable Energy Management",
+      "venue": "International Journal of Robotics and Control Systems",
+      "year": 2024,
+      "volume": "4",
+      "issue": "1",
+      "pages": "33–49",
+      "doi": "10.31763/ijrcs.v4i1.1234",
+      "doi_url": "https://doi.org/10.31763/ijrcs.v4i1.1234",
+      "canonical_url": "https://pubs2.ascee.org/index.php/IJRCS/article/view/1234",
+      "access": "Direct article and issue fetches returned HTTP 403. Publisher-domain indexed article, metadata page, issue contents and PDF first page are available. Publisher marks CC BY-SA, so the fetch error is not evidence of a paywall.",
+      "metadata_verdict": "All stated fields match. DOI suffix 1234 is real.",
+      "content_support": "Abstract explicitly applies CatBoost to 35040 steel-energy observations and reports GridSearchCV with 5-fold cross-validation. Supports related-work sentence; does not validate the current warning-budget results.",
+      "supporting_primary_urls": [
+        "https://pubs2.ascee.org/index.php/IJRCS/rt/metadata/1234/0",
+        "https://pubs2.ascee.org/index.php/IJRCS/issue/view/78",
+        "https://www.pubs2.ascee.org/index.php/IJRCS/article/download/1234/pdf"
+      ],
+      "corrections": []
+    },
+    {
+      "n": 4,
+      "authors": [
+        "Zhiwei Wang",
+        "Maomao Ding",
+        "Zhongwei Cai",
+        "Wei Yu",
+        "Xin Luo"
+      ],
+      "title": "Short Term Steel Plant Load Forecasting Based on Multi Sequence LSTM Recurrent Neural Network and Self-Organizing Neural Network",
+      "venue": "The Journal of Engineering",
+      "year": 2025,
+      "volume": "2025",
+      "issue": "1",
+      "article_number": "e70100",
+      "doi": "10.1049/tje2.70100",
+      "doi_url": "https://doi.org/10.1049/tje2.70100",
+      "canonical_url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/tje2.70100",
+      "access": "Publisher full text readable and marked Open Access. DOI fetch itself failed in tool.",
+      "metadata_verdict": "Matches, except original article.txt omitted e70100. Minor hyphenation/capitalization variation in title does not change identity.",
+      "content_support": "Supports multi-sequence LSTM load forecasting in steel plants. Full text describes 10 Chinese plants, 2015, 15-minute intervals; it is not the same UCI dataset.",
+      "corrections": [
+        "Add Art. no. e70100 if missing."
+      ]
+    },
+    {
+      "n": 5,
+      "authors": [
+        "Lingzhi Yi",
+        "Deshui Yu",
+        "Yahui Wang",
+        "Bote Luo",
+        "Xinlong Peng"
+      ],
+      "title": "Ultra-short-term Forecasting Study of Power Load in Mega Steel Industry Based on Multi-stage Modeling",
+      "venue": "Recent Patents on Mechanical Engineering",
+      "year": 2026,
+      "volume": "19",
+      "issue": "1",
+      "pages": "131–149",
+      "doi": "10.2174/0122127976360100241221192728",
+      "doi_url": "https://doi.org/10.2174/0122127976360100241221192728",
+      "canonical_url": "https://www.benthamscience.com/public/article/145936",
+      "access": "Publisher citation and abstract readable. PDF has purchase/login controls; full text not read.",
+      "metadata_verdict": "Matches. Long DOI is real. Online date 2025-01-20 and issue year 2026 coexist; keep 2026 for 19(1).",
+      "content_support": "Abstract explicitly targets ultra-short-term load prediction with improved peak-period accuracy using an LSTM-XGBoost-based model. Supports the related-work sentence, but no full methodological audit was possible.",
+      "corrections": []
+    },
+    {
+      "n": 6,
+      "authors": [
+        "Andrea Maria N. C. Ribeiro",
+        "Pedro Rafael X. do Carmo",
+        "Iago Richard Rodrigues",
+        "Djamel Sadok",
+        "Theo Lynn",
+        "Patricia Takako Endo"
+      ],
+      "title": "Short-Term Firm-Level Energy-Consumption Forecasting for Energy-Intensive Manufacturing: A Comparison of Machine Learning and Deep Learning Models",
+      "venue": "Algorithms",
+      "year": 2020,
+      "volume": "13",
+      "issue": "11",
+      "article_number": "274",
+      "doi": "10.3390/a13110274",
+      "doi_url": "https://doi.org/10.3390/a13110274",
+      "canonical_url": "https://www.mdpi.com/1999-4893/13/11/274",
+      "access": "Direct page returned HTTP 429 / later fetch error. Indexed full publisher text and version-note citation available; page identifies Open Access. Not a missing paper or established paywall.",
+      "metadata_verdict": "All bibliographic fields match.",
+      "content_support": "Compares ML/DL, ARIMA and manual forecasting at a Brazilian thermoplastic resin plant. Supports energy-intensive manufacturing comparison, but should not be represented as a steel-plant study.",
+      "supporting_primary_urls": [
+        "https://www.mdpi.com/1999-4893/13/11/274/notes"
+      ],
+      "corrections": []
+    },
+    {
+      "n": 7,
+      "authors": [
+        "Leonard J. Tashman"
+      ],
+      "title": "Out-of-sample tests of forecasting accuracy: an analysis and review",
+      "venue": "International Journal of Forecasting",
+      "year": 2000,
+      "volume": "16",
+      "issue": "4",
+      "pages": "437–450",
+      "doi": "10.1016/S0169-2070(00)00065-0",
+      "doi_url": "https://doi.org/10.1016/S0169-2070(00)00065-0",
+      "canonical_url": "https://www.sciencedirect.com/science/article/pii/S0169207000000650",
+      "access": "DOI attempt returned HTTP 403; direct publisher open failed. Indexed publisher abstract/section snippets and metadata available. Full text not read; paywall status not established.",
+      "metadata_verdict": "All bibliographic fields match.",
+      "content_support": "Supports out-of-sample time-series evaluation, fit/test division and rolling origins. Also favors multiple test periods; it does not independently validate the manuscript's exact one-year split or guarantee warning-budget transfer.",
+      "corrections": []
+    },
+    {
+      "n": 8,
+      "authors": [
+        "Liudmila Prokhorenkova",
+        "Gleb Gusev",
+        "Aleksandr Vorobev",
+        "Anna Veronika Dorogush",
+        "Andrey Gulin"
+      ],
+      "title": "CatBoost: unbiased boosting with categorical features",
+      "venue": "Advances in Neural Information Processing Systems",
+      "year": 2018,
+      "volume": "31",
+      "pages": "6638–6648",
+      "doi": null,
+      "doi_url": null,
+      "canonical_url": "https://papers.nips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html",
+      "access": "Official NeurIPS abstract and JSON metadata readable; paper and supplemental links present. BibTeX response has unsupported content type in tool, not broken link.",
+      "metadata_verdict": "Authors/title/year/volume match. Page range from official Metadata.json is absent from the manuscript.",
+      "content_support": "Correct original CatBoost citation. Supports method identity, classification/regression applicability and ordered-boosting ideas, not the manuscript's chosen hyperparameters or numerical performance.",
+      "supporting_primary_urls": [
+        "https://papers.nips.cc/paper_files/paper/2018/file/14491b756b3a51daac41c24863285549-Metadata.json",
+        "https://papers.nips.cc/paper/7898-catboost-unbiased-boosting-with-categorical-features.pdf"
+      ],
+      "corrections": [
+        "Recommended completion: add pp. 6638–6648 and official URL. Do not invent a DOI."
+      ]
+    },
+    {
+      "n": 9,
+      "authors": [
+        "Takaya Saito",
+        "Marc Rehmsmeier"
+      ],
+      "title": "The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets",
+      "venue": "PLOS ONE",
+      "year": 2015,
+      "volume": "10",
+      "issue": "3",
+      "article_number": "e0118432",
+      "doi": "10.1371/journal.pone.0118432",
+      "doi_url": "https://doi.org/10.1371/journal.pone.0118432",
+      "canonical_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118432",
+      "access": "DOI explicitly redirected to PLOS but that route failed in the tool. Canonical article URL opened and full text is readable, Open Access.",
+      "metadata_verdict": "All bibliographic fields match.",
+      "content_support": "Direct support for precision-recall analysis on imbalanced data. Full-text search found no occurrence of average precision. It is not a direct definition/reference for the specific noninterpolated average-precision estimator.",
+      "corrections": [
+        "No bibliography correction. Improve citation placement: cite [9] for PR evaluation under imbalance; define AP separately or reference the actual implementation/formula."
+      ]
+    },
+    {
+      "n": 10,
+      "authors": [
+        "Hans R. Künsch"
+      ],
+      "title": "The Jackknife and the Bootstrap for General Stationary Observations",
+      "venue": "The Annals of Statistics",
+      "year": 1989,
+      "volume": "17",
+      "issue": "3",
+      "pages": "1217–1241",
+      "doi": "10.1214/aos/1176347265",
+      "doi_url": "https://doi.org/10.1214/aos/1176347265",
+      "canonical_url": "https://projecteuclid.org/journals/annals-of-statistics/volume-17/issue-3/The-Jackknife-and-the-Bootstrap-for-General-Stationary-Observations/10.1214/aos/1176347265.full",
+      "access": "DOI resolution to the correct Project Euclid title/volume/issue URL was observed. Article/PDF returned only an iframe shell, so full publisher text was not readable. Author's ETH bibliography indexed by search confirms title, 1989, volume 17, pp. 1217–1241.",
+      "metadata_verdict": "Metadata consistent with manuscript. Prefer author spelling Künsch; issue 3 also appears in publisher destination URL.",
+      "content_support": "Appropriate foundational reference for block resampling with stationary dependent observations. No independent confirmation that this specific reference establishes the manuscript's circular variant, seven-day block choice or intervals under monthly distribution change.",
+      "supporting_primary_urls": [
+        "https://people.math.ethz.ch/~kuensch/papers/",
+        "https://www.stat.math.ethz.ch/CRAN/web/packages/boodd/refman/boodd.html"
+      ],
+      "corrections": [
+        "Typographic improvement: H. R. Künsch.",
+        "If circular bootstrap needs a dedicated citation, consider Politis and Romano (1992), A circular block-resampling procedure for stationary data. Official boodd documentation distinguishes this from Künsch's moving-block method; original 1992 chapter was not audited here."
+      ]
+    }
+  ],
+  "overall_interpretation": "The reference list is credible and the related-work claims are broadly supported. Source existence and correct citation do not reproduce or validate the current empirical results. No claim is made that every link opens without authentication, rate limits or anti-bot restrictions in every browser."
+}

@@ -1,0 +1,29 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/851/steel+industry+energy+consumption.zip",
+  "source_doi": "10.24432/C52G8C",
+  "license": "CC BY 4.0",
+  "sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "rows": 35040,
+  "columns": [
+    "date",
+    "Usage_kWh",
+    "Lagging_Current_Reactive.Power_kVarh",
+    "Leading_Current_Reactive_Power_kVarh",
+    "CO2(tCO2)",
+    "Lagging_Current_Power_Factor",
+    "Leading_Current_Power_Factor",
+    "NSM",
+    "WeekStatus",
+    "Day_of_week",
+    "Load_Type"
+  ],
+  "missing_cells": 0,
+  "timestamp_nonincreasing_steps": 365,
+  "time_axis": "original row order; 96 records per source day; timestamps not corrected or sorted",
+  "raw_date_first": "01/01/2018 00:15",
+  "raw_date_last": "31/12/2018 00:00",
+  "peak_cutoff": 85.82,
+  "calibration_peaks": 405,
+  "test_peaks": 681,
+  "test_onsets": 228
+}

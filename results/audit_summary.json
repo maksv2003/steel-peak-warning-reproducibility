@@ -1,0 +1,31 @@
+{
+  "scope": "Table I; Table II; prose confusion and onset counts; monthly rates; marginal and paired confidence intervals; split sizes and source data counts",
+  "interpretation": "legacy and source rows directly audit manuscript quantities; origin_safe rows compare a deliberately modified protocol and are not exact-replication claims",
+  "original_code_available": false,
+  "reported_values_used_for_fitting_or_tuning": false,
+  "figures": "Numerically stated operating points and monthly rates are covered. Unlabelled plot coordinates are not treated as independent exact numeric claims.",
+  "by_protocol": {
+    "legacy": {
+      "checked_quantities": 89,
+      "status_counts": {
+        "mismatch": 45,
+        "match": 44
+      }
+    },
+    "origin_safe": {
+      "checked_quantities": 89,
+      "status_counts": {
+        "mismatch": 51,
+        "match": 38
+      }
+    },
+    "source": {
+      "checked_quantities": 7,
+      "status_counts": {
+        "match": 7
+      }
+    }
+  },
+  "all_direct_quantities_match": false,
+  "all_direct_quantities_available": true
+}

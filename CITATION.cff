@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this repository when using this software reconstruction. Cite the underlying research and UCI dataset separately; the maintainer credit below is not a claim of authorship of that research."
+type: software
+title: "Steel Peak Warning: Reproducibility Reconstruction"
+authors:
+  - name: "maksv2003"
+    website: "https://github.com/maksv2003"
+version: "1.0.0"
+date-released: "2026-10-20"
+url: "https://github.com/maksv2003/steel-peak-warning-reproducibility"
+repository-code: "https://github.com/maksv2003/steel-peak-warning-reproducibility"
+abstract: "New implementation of a manuscript-described steel-electricity peak-warning experiment, with explicit legacy and origin-safe evaluation protocols, source-data checks, computed outputs, and disclosed disagreements with the manuscript."
+keywords:
+  - reproducibility
+  - time series
+  - electricity consumption
+  - early warning
+  - CatBoost
