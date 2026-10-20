@@ -1,0 +1,17 @@
+{
+  "manuscript_version": "PIERE revised manuscript supplied 2026-10-20",
+  "fixture_source": {
+    "filename": "7917_6828_PIERE_revised.docx",
+    "sha256": "0703f46e59ec52f1e24f78af78a8ca028ef2c4c2d5467139888cd7752333fb3c",
+    "note": "Numeric claims transcribed from the supplied DOCX, before the accompanying layout/documentation revision; the manuscript file is not redistributed here."
+  },
+  "scope": "Table I; Table II; prose TP/FP and detected-onset counts; monthly rates; marginal and paired confidence intervals; split sizes, peak counts and source-data counts. Repeated prose claims are checked once. This is a numeric consistency check against stored outputs, not an independent model rerun or verification of every statement.",
+  "interpretation": "Direct comparison with revised-manuscript claims using origin_safe and source-data outputs; no comparison with legacy results.",
+  "reported_values_used_for_fitting_or_tuning": false,
+  "checked_quantities": 99,
+  "status_counts": {
+    "match": 99
+  },
+  "all_quantities_match": true,
+  "all_quantities_available": true
+}

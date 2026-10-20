@@ -1,7 +1,9 @@
-"""Audit computed outputs against numeric claims in the supplied manuscript.
+"""Historical audit against numeric claims in the earlier manuscript.
 
-Reported values below are read-only comparison fixtures, never model inputs.
-The legacy protocol is the direct replication comparison. origin_safe values
+Reported values below preserve the earlier manuscript, not the revised PIERE version.
+Use audit_revised_manuscript.py for the revised manuscript. These historical
+fixtures are read-only comparison values, never model inputs.
+The legacy protocol is the direct comparison with the earlier manuscript. origin_safe values
 are compared for transparency but represent a deliberately modified protocol.
 """
 from __future__ import annotations

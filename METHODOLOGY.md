@@ -2,14 +2,14 @@
 
 ## Scope and status
 
-This repository reconstructs the experiment described in *Early Warning of Peak Electricity Consumption in Steel Production under a False Warning Budget*. The manuscript was available; the authors' original executable code, saved predictions, and reproducibility archive were not supplied. This is therefore a new implementation of the written method, not a recovered copy of the original experiment.
+This repository reconstructs the experiment described in *Early Warning of Peak Electricity Consumption in Steel Production under a False Warning Budget*. The earlier manuscript was available; its original executable code, saved predictions, and reproducibility archive were not supplied. This repository began as a new implementation of that written method. The revised PIERE manuscript now specifies and reports this implementation's `origin_safe` experiment. References below to unresolved choices or discrepancies concern the earlier manuscript; the revised numerical claims are audited separately.
 
 Two different questions must be kept separate:
 
 1. **Is this implementation reproducible?** The supplied data, configuration, dependency information, code, predictions, and derived outputs should allow its results to be regenerated.
-2. **Does this implementation reproduce the manuscript's numbers?** This requires comparison with the reported quantities. A deterministic implementation can still disagree with the manuscript because the written description leaves implementation choices unspecified, because an environment differs, or because the original analysis used a different procedure.
+2. **Does this implementation reproduce the earlier manuscript's numbers?** This requires comparison with the reported quantities. A deterministic implementation can still disagree with the manuscript because the written description leaves implementation choices unspecified, because an environment differs, or because the original analysis used a different procedure.
 
-The reconstruction choices below are explicit. They are not established facts about the unavailable original code. Parameters and feature definitions must not be adjusted against test results merely to obtain the manuscript's numbers. Numerical agreements and disagreements belong in `manuscript_comparison.csv`; discrepancies must remain visible rather than being overwritten with reported values. No experimental result is asserted in this document before it has been computed.
+The reconstruction choices below are explicit. They are not established facts about the unavailable original code. Parameters and feature definitions must not be adjusted against test results merely to obtain the manuscript's numbers. Historical numerical agreements and disagreements belong in `manuscript_comparison.csv`; discrepancies must remain visible rather than being overwritten with reported values. No experimental result is asserted in this document before it has been computed.
 
 ## Source data and observation index
 
@@ -64,7 +64,7 @@ Feature order is fixed as listed below. In each cyclic pair, sine precedes cosin
 
 Map the source `Day_of_week` labels to Monday=0, Tuesday=1, ..., Sunday=6. Derive the weekend indicator from this target weekday. All rolling windows end at and include the origin and require a complete window. No forward-looking rolling calculation or imputation is permitted. The earliest eligible origin is consequently `o = 671`.
 
-The manuscript explicitly specifies sample standard deviation but does not fully specify recent-lag conventions, the meaning of "changes," weekday encoding, cyclic phase, or feature order. The choices above resolve those ambiguities for this implementation. In particular, the recent values include `x[o]`, and changes are differences in kWh rather than percentage changes.
+The earlier manuscript explicitly specified sample standard deviation but did not fully specify recent-lag conventions, the meaning of "changes," weekday encoding, cyclic phase, or feature order. The choices above resolve those ambiguities for this implementation. In particular, the recent values include `x[o]`, and changes are differences in kWh rather than percentage changes.
 
 ## Models and scores
 
@@ -89,7 +89,7 @@ The manuscript lists Python 3.12.14, NumPy 1.26.4, pandas 2.2.3, SciPy 1.15.1, s
 
 ## Evaluation modes
 
-### `legacy`: reproduce the manuscript's target-based partition
+### `legacy`: retain the earlier manuscript's target-based partition
 
 For eligible origins `o >= 671` and targets `j = o+h`:
 
@@ -107,11 +107,11 @@ This produces the following sizes by construction:
 | 2 hours (`h=8`) | 679 | 16697 | 5952 | 11712 |
 | 4 hours (`h=16`) | 687 | 16689 | 5952 | 11712 |
 
-The training count is `17376-(671+h)`. Thus, the sizes match the manuscript's stated indexing convention.
+The training count is `17376-(671+h)`. Thus, the sizes match the earlier manuscript's stated indexing convention, not the revised manuscript's calibration/test sizes.
 
 This mode has an availability limitation at segment boundaries. The first `h` origins for calibration lie in the preceding training segment; the first `h` origins for testing lie in the preceding calibration segment. For the first `h-1` of these origins, the final outcome used to fit the model or select the warning threshold occurs strictly after the forecast origin. Nonoverlapping target segments alone therefore do not establish a fully deployable chronological experiment. This limitation is retained and disclosed in `legacy` so that the written experiment can be reconstructed without silently changing its sample membership.
 
-### `origin_safe`: require model and threshold availability at forecast origins
+### `origin_safe`: the revised manuscript protocol
 
 Keep the training targets unchanged, but require origins to occur in the new segment before making its forecasts:
 
@@ -143,7 +143,7 @@ Select a warning threshold separately for every method, horizon, budget, and eva
 
 Let `B = floor(budget*62)`. Define candidate thresholds as the distinct observed calibration scores together with positive infinity. For each candidate, count calibration records that both issue a warning and have `y=0`. Select the **smallest candidate threshold** whose false-positive count is at most `B`. Positive infinity provides a valid no-warning choice when necessary. Equal scores are never split to meet a budget.
 
-Candidate-set specification matters: a threshold just above a forbidden score, calculated with a floating-point `nextafter` operation, can give identical calibration predictions but different test predictions from the next observed candidate score. The manuscript does not settle this detail. This repository uses the discrete observed-score candidate rule above and does not adjust thresholds using test outcomes.
+Candidate-set specification matters: a threshold just above a forbidden score, calculated with a floating-point `nextafter` operation, can give identical calibration predictions but different test predictions from the next observed candidate score. The earlier manuscript did not settle this detail; the revised manuscript specifies the observed-score candidate rule. This repository uses the discrete observed-score candidate rule above and does not adjust thresholds using test outcomes.
 
 Keep each selected threshold fixed during the corresponding test evaluation. The empirical calibration allowance is not a statistical guarantee about future false-warning rates.
 
@@ -179,17 +179,17 @@ Use the following explicit reconstruction:
 4. Expand every start into seven consecutive day indices, wrapping modulo 122. Concatenate the 18 blocks in drawn order and retain their first 122 day indices.
 5. Use this same day-index sequence for every model and every paired comparison in the replicate. Repeated days contribute repeated counts.
 6. Calculate recall as `sum(TP)/sum(positive_targets)`, not as the unweighted average of daily recall. Calculate false warnings per day as `sum(FP)/122`.
-7. Calculate paired recall differences within the same replicate. The manuscript's named comparisons are classifier minus logistic regression and classifier minus regressor.
+7. Calculate paired recall differences within the same replicate. The revised manuscript's named comparisons are classifier minus logistic regression, classifier minus regressor, and regressor minus logistic regression.
 8. Report the 0.025 and 0.975 quantiles of the replicate values using linear quantile interpolation.
 
-The RNG API, block assembly and truncation, and quantile convention are reconstruction choices not fully specified by the manuscript's seed and block length alone. A seed does not make two different bootstrap algorithms identical.
+The RNG API, block assembly and truncation, and quantile convention were reconstruction choices not fully specified by the earlier manuscript's seed and block length alone. The revised manuscript now states this full procedure. A seed does not make two different bootstrap algorithms identical.
 
 Circular block resampling preserves some local temporal dependence but does not establish stationarity or generalization to other plants or years. Month-to-month changes in the data limit the interpretation of its intervals. An observed test false-warning rate above a budget and evidence that an underlying expected rate exceeds that budget are distinct claims. Likewise, the largest observed metric value is not by itself evidence of a statistically significant model advantage.
 
 ## Interpreting outputs and comparisons
 
-Keep results from `legacy` and `origin_safe` distinguishable in all outputs. Use `legacy` for direct comparison with the manuscript's reported target-based sample sizes and metrics. Use `origin_safe` to examine the effect of enforcing information availability at each forecast origin; its changed sample membership means that it is not expected to reproduce every manuscript number.
+Keep results from `legacy` and `origin_safe` distinguishable in all outputs. Use `origin_safe` for direct comparison with the revised manuscript. Use `legacy` for the historical comparison with the earlier manuscript's target-based sample sizes and metrics. Its different sample membership means that it is not the protocol reported in the revised manuscript.
 
 Record actual confusion counts, eligible sample sizes, peak and onset counts, selected thresholds, daily and monthly counts, model scores, and environment information alongside rounded display metrics. The manuscript reports many quantities only to limited precision. Comparison should identify both the reported precision and the actual computed value, rather than claim exact equality from rounded values alone.
 
-`manuscript_comparison.csv` is the location for the numerical audit. Agreement there supports only the quantities actually checked; disagreement is a finding to investigate and disclose. Neither successful script execution nor matching a few headline numbers establishes that all original results have been reproduced.
+`manuscript_comparison.csv` is the historical audit of the earlier manuscript. `revised_manuscript_comparison.csv` is the separate numerical audit of the revised manuscript, using fixed claims in `revised_manuscript_claims.json` and the `origin_safe` outputs. Agreement there supports only the quantities actually checked; disagreement is a finding to investigate and disclose. Neither successful script execution nor matching a few headline numbers establishes that all original results have been reproduced.

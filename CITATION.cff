@@ -9,7 +9,7 @@ version: "1.0.0"
 date-released: "2026-10-20"
 url: "https://github.com/maksv2003/steel-peak-warning-reproducibility"
 repository-code: "https://github.com/maksv2003/steel-peak-warning-reproducibility"
-abstract: "New implementation of a manuscript-described steel-electricity peak-warning experiment, with explicit legacy and origin-safe evaluation protocols, source-data checks, computed outputs, and disclosed disagreements with the manuscript."
+abstract: "Implementation of a steel-electricity peak-warning experiment with explicit legacy and origin-safe evaluation protocols, source-data checks, the origin-safe outputs reported in the revised manuscript, and a preserved historical audit of disagreements with the earlier manuscript."
 keywords:
   - reproducibility
   - time series
