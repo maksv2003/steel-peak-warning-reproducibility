@@ -1,6 +1,6 @@
 # Source verification and citation scope
 
-Checked **2026-10-20** against publisher, repository and author records. These are the manuscript's ten references, not a claim that each cited paper independently validates this reconstruction. Full citation metadata, additional evidence links and limitations are in [references_audit.json](references_audit.json).
+Checked **2026-10-20** against publisher, repository and author records. These are the ten external references shared by the earlier and revised manuscripts. The revised manuscript additionally cites this reproducibility repository as reference [11]. This source audit does not imply that each cited paper independently validates this reconstruction. Full citation metadata, additional evidence links and limitations are in [references_audit.json](references_audit.json).
 
 All ten sources were identified. No invalid DOI or nonexistent publication was established. Some direct requests returned 403/429 or a tool fetch error while indexed text from the publisher remained available. These are access limitations, not evidence that the identifier is wrong. Subscription access, anti-bot restrictions and link validity are separate questions.
 
@@ -37,7 +37,7 @@ Z. Wang, M. Ding, Z. Cai, W. Yu and X. Luo. “Short term steel plant load forec
 
 - Canonical page: [Wiley / IET](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/tje2.70100).
 - Access: full publisher text readable, marked Open Access.
-- Verified: authors, title, year, volume/issue, DOI and article number. The manuscript's original reference omitted `e70100`.
+- Verified: authors, title, year, volume/issue, DOI and article number. The earlier manuscript's reference omitted `e70100`.
 - Supports: multi-sequence LSTM forecasting in steel plants. The paper describes ten Chinese plants and 2015 data, rather than the present UCI case.
 
 ## 5. Prediction with attention to peak periods
@@ -73,7 +73,7 @@ L. Prokhorenkova, G. Gusev, A. Vorobev, A. V. Dorogush and A. Gulin. “CatBoost
 
 - Canonical page: [NeurIPS proceedings](https://papers.nips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html).
 - Access: official abstract and [JSON metadata](https://papers.nips.cc/paper_files/paper/2018/file/14491b756b3a51daac41c24863285549-Metadata.json) readable; paper and supplementary links available.
-- Verified: authors, title, year, volume and page range. The page range completes the manuscript reference. No DOI is supplied here.
+- Verified: authors, title, year, volume and page range. The page range completes the earlier manuscript reference and is included in the revised manuscript. No DOI is supplied here.
 - Supports: CatBoost's method identity and its underlying boosting techniques. Hyperparameters used in this repository are reconstruction settings, not values justified by this citation alone.
 
 ## 9. Precision–recall evaluation under imbalance
@@ -96,4 +96,4 @@ H. R. **Künsch**. “The jackknife and the bootstrap for general stationary obs
 
 ## Rights and interpretation
 
-This file provides bibliographic metadata and short verification notes. It does not redistribute the cited papers or grant rights in them. Publication existence, a correct DOI and topical relevance do not establish that this reconstruction reproduces every original numerical result. See [README.md](README.md) for the observed agreements and discrepancies.
+This file provides bibliographic metadata and short verification notes. It does not redistribute the cited papers or grant rights in them. Publication existence, a correct DOI and topical relevance do not establish that this reconstruction reproduces every original numerical result. See [README.md](README.md) for the revised-manuscript consistency check and the separately preserved historical discrepancies.
